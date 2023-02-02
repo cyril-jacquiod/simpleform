@@ -41,3 +41,7 @@ footer {
   margin-top: 80px;
   font-size: 10px;
 }
+
+.password style {
+  border-color: red;
+}
