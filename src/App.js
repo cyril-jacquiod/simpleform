@@ -1,23 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import { useState } from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="formulaire">
+      <h1>Create account</h1>
+      <form>
+        <div>
+          <p>Name</p>
+          <input type="text" placeholder="Name" value="Jean Dupont" />
+        </div>
+        <div>
+          <p>Email</p>
+          <input
+            type="Email"
+            placeholder="email"
+            value="jeandupont@lereacteur.io"
+          />
+        </div>
+        <div>
+          <p>Password</p>
+          <input
+            type="password"
+            name="password"
+            placeholder="password"
+            value="azerty"
+          />
+        </div>
+        <div>
+          <p>Confirm your password</p>
+
+          <input
+            type="password"
+            name="password"
+            placeholder="Confirm your password"
+            value="azerty"
+          />
+        </div>
+        <div>
+          <button type="submit">Register</button>
+        </div>
+      </form>
+      <footer> Made with React at Le Reacteur by Cyril</footer>
     </div>
   );
 }
